@@ -1,16 +1,13 @@
 *{ /* This means all elements, so we are setting all elements to have zero margins and zero padding, making them look the same in all browsers. */
     margin: 0;
     padding: 0;
-    font-family: Century, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .MainButtons{
-    position: sticky;
-    overflow: auto;
     float: left;
     list-style-type: none;
     margin-top: 115px;
-    margin-left:0px;
+    overflow: auto;
 }
 
 .MainButtons li{
@@ -18,15 +15,15 @@
 }
 
 .MainButtons li a{
-    text-decoration: none;
-    color: #fff;
-    font-family: serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    padding: 30px 40px;
     border: 1px solid #fff;
     border-radius: 15%;
     box-shadow: -5px 5px #fff;
+    color: #fff;
+    font-family: serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
     margin-left:20px;
+    padding: 30px 40px;
+    text-decoration: none;
 }
 
 .MainButtons li a:hover{ /* when the mouse is over these buttons, the background changes to white and the font color to black */
@@ -36,9 +33,9 @@
 }
 
 .NameTitle{
+    left: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%,-50%);
 }
 .NameTitle h1{
@@ -48,30 +45,30 @@
 }
 
 .Wrapper{
-    overflow: auto; /*This makes the parent div stay at its position*/
     background-color:#000;
+    overflow: auto; /*This makes the parent div stay at its position*/
 }
 
 .AboutMe{
-    overflow: auto;
-    margin-top:725px; /*Moves the AboutMe div along with its siblins 640px down */
-    padding:100px;
     background-color: #fff;
     height:600px;
+    margin-top:725px; /*Moves the AboutMe div along with its siblins 640px down */
+    overflow: auto;
+    padding:100px;
 }
 
 .AboutMe .AboutMeTitle{
     color: #000;
     font-family: serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 50px;
-    margin-top:-15px;
     margin-left: 790px;
+    margin-top:-15px;
 }
 
 .AboutMe .profile-picture {
-    float: left;
     border-radius: 50%;
     box-shadow: 5px 5px #000;
+    float: left;
     margin-top: 90px;
 }
 
@@ -79,76 +76,76 @@
     border: 1px solid #000;
     border-radius: 3%;
     box-shadow: 10px 10px #000;
-    padding: 30px 30px; 
     color: #000;
     font-size: 16.5px;
     font-style: normal;
     font-family: serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     margin-left: 500px; /*move the bio 500 px to the left*/
     margin-top: 50px;
+    padding: 30px 30px; 
 }
 
 .Skills{
-    overflow: auto;
     background-color: #000;
     background-size: 1600px 1500px; /* width, height*/
     height: 797px;
+    overflow: auto;
 }
 
 .Skills .SkillsTitle{
     color: #fff;
     font-family:  serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 40px;
-    margin-top: 80px;
     margin-left: 270px;
+    margin-top: 80px;
 }
 
 .Skills .ListOfSkills{
     border: 1px solid #fff;
     border-radius: 3%;
     box-shadow: -10px 10px #fff;
-    padding: 50px 60px; 
+    color: #fff;
     font-family:  serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    color: #fff;
-    margin-top: 50px;
     margin-left: 120px;
+    margin-top: 50px;
+    padding: 50px 60px; 
     width: 350px;
 }
 
 .Skills .ListOfSkills .ProgrammingLanguages, .Platforms, .Languages{
-    margin-left: 100px;
     font-family:  serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 18px;
+    margin-left: 100px;
 }
 
 .CollageOfLogos{
-    position: absolute;
-    margin-top: 165px;
     margin-left: 750px;
+    margin-top: 165px;
+    position: absolute;
 }
 
 .Portfolio{
-    overflow: auto;
     background-color:#fff;
     background-size: 1600px 1500px;
+    overflow: auto;
 }
 
 .Portfolio .PortfolioTitle{
     color: #000;
     font-family: serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 50px;
-    margin-top:80px;
     margin-left: 620px;
+    margin-top:80px;
 }
 
 .Portfolio .PersonalProjectsTitle{
     border:1.5px solid #000;
-    padding: 10px 580px;
     color:#000;
     font-family: serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 40px;
     margin-top: 80px;
+    padding: 10px 580px;
 }
 
 .SchoolProjects{
@@ -156,11 +153,11 @@
 }
 .Portfolio .SchoolProjectsTitle{
     border:1.5px solid #000;
-    padding: 10px 600px;
     color:#000;
     font-family: serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 40px;
     margin-top: 80px;
+    padding: 10px 600px;
 }
 
 /* Projects are going to have this structure:
@@ -178,9 +175,9 @@
     margin-top: 50px;
 }
 .Portfolio .MagnitieImage{
-    float: left;  /* Image located at the left side */
     border-radius: 5%;
     box-shadow: 5px 5px #000;
+    float: left;  /* Image located at the left side */
     margin-top:30px;
     margin-left:50px;
 }
@@ -188,22 +185,22 @@
     border: 1px solid #000;
     border-radius: 5%;
     box-shadow: 10px 10px #000;
-    padding: 30px 35px; 
     color:#000;
     font-style: normal;
     font-size: 17px;
     font-family: serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    margin-right: 100px;
     margin-left: 600px;
     margin-top: 10px;
+    margin-right: 100px;
+    padding: 30px 35px; 
 }
 
 .Portfolio .MagnitieLink{
-    text-decoration: none;
+    border: 1px solid #000;
     color: #000;
     margin-left: 465px;
     padding: 15px 35px;
-    border: 1px solid #000;
+    text-decoration: none;
 }
 
 .Portfolio .MagnitieLink:hover{
@@ -221,8 +218,8 @@
 }
 
 .Portfolio .RshellImage{
-    float: right; /* Image located at the right side */
     box-shadow: 5px 5px #000;
+    float: right; /* Image located at the right side */
     margin-top:20px;
     margin-right:100px;
 }
@@ -231,23 +228,23 @@
     border: 1px solid #000;
     border-radius: 5%;
     box-shadow: -10px 10px #000;
-    padding: 30px 30px; 
     color:#000;
-    font-style: normal;
     font-size: 17px;
+    font-style: normal;
     font-family: serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    height: 230px;
     margin-left: 50px;
     margin-right: 680px;
     margin-top: 37px;
-    height: 230px;
+    padding: 30px 30px; 
 }
 
 .Portfolio .RshellLink{
-    text-decoration: none;
+    border: 1px solid #000;
     color: #000;
     margin-left: 445px;
     padding: 15px 35px;
-    border: 1px solid #000;
+    text-decoration: none;
 }
 
 .Portfolio .RshellLink:hover{
@@ -256,36 +253,10 @@
     transition: 0.8s ease;
 }
 
-.Resume{
-    overflow: auto;
-    background-color: #fff;
-}
-.Resume .ResumeTitle{
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    margin-top: 100px;
-    margin-left:50px;
-}
-
-.Resume .ResumeLink{
-    text-decoration: none;
-    color: #000;
-    margin-left:50px;
-    padding: 15px 35px;
-    border: 1px solid #000;
-}
-
-.Resume .ResumeLink:hover{
-    background-color: #000;
-    color:#fff;
-    transition: 0.8s ease;
-}
-
 .Contact{
-    overflow: auto;
     background-color: #000;
     height: 530px;
+    overflow: auto;
 }
 
 .Contact .ContactTitle{
@@ -297,18 +268,19 @@
 }
 
 .Contact .ContactInfo{
+    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: #fff;
+    margin-left: 100px;   
     margin-top: 40px;
-    margin-left: 100px;
+
 }
 
 .Contact .ContactInfo .Email, .Github{
-    text-decoration: none;
+    border: 0.5px solid #000;
     color: #fff;
     padding: 5px 10px;
-    border: 0.5px solid #000;
+    text-decoration: none;
 }
 
 .Contact .ContactInfo .Email:hover, .Github:hover{
