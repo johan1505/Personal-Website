@@ -1,7 +1,7 @@
 *{ /* This means all elements, so we are setting all elements to have zero margins and zero padding, making them look the same in all browsers. */
     margin: 0;
     padding: 0;
-    font-family: "montserrat", sans-serif;
+    font-family: 'Alegreya',"montserrat", sans-serif;
 }
 
 .MainButtons{
@@ -16,15 +16,16 @@
 }
 
 .MainButtons li a{
-    border: 1px solid #f5f6fa;
+    border: .1px solid #f5f6fa;
     border-radius: 10px;
+    box-shadow: 0 2px 6px 0 rgba(255, 255, 255, 0), 0 1px 7px 0 rgba(255, 255, 255, .8);
     color: #f5f6fa;
     cursor: pointer;
-    font-family: "montserrat", sans-serif;
     font-size: 20px;
+    margin:10px;
     margin-left:20px;
     min-width: 20px;
-    padding: 30px 40px;
+    padding: 20px 30px;
     text-decoration: none;
     text-transform: capitalize;
 }
@@ -43,7 +44,6 @@
 }
 .NameTitle h1{
     color: #f5f6fa;
-    font-family: "montserrat", sans-serif;
     font-size: 70px;
 }
 
@@ -54,35 +54,42 @@
 
 .AboutMe{
     background-color: #f5f6fa;
-    height:600px;
-    margin-top:725px; /*Moves the AboutMe div along with its siblins 640px down */
+    height:630px;
+    margin-top:790px; /*Moves the AboutMe div along with its siblins 640px down */
     overflow: auto;
     padding:100px;
 }
 
 .AboutMe .AboutMeTitle{
     color: #1e272e;
-    font-family: "montserrat", sans-serif;
     font-size: 50px;
     margin-left: 790px;
-    margin-top:-15px;
+    margin-top:-50px;
+    overflow: auto;
 }
+
+.AboutMe .AboutMeBorder{
+    width: 210px;
+    height: 4px;
+    background: #1e272e;
+    margin: 15px 785px;
+}
+
 
 .AboutMe .profile-picture {
     border-radius: 50%;
-    box-shadow: 5px 5px #1e272e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .8), 0 6px 20px 0 rgba(0, 0, 0, .8);
     float: left;
-    margin-top: 90px;
+    margin-top: 130px;
 }
 
 .AboutMe .Bio{
     border: 1px solid #1e272e;
     border-radius: 10px;
-    box-shadow: 10px 10px #1e272e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .8), 0 6px 20px 0 rgba(0, 0, 0, .8); /*Two pixel paremeters and an rgba function for each shadow layer. In total 2 layers*/
     color: #1e272e;
     font-size: 16.5px;
     font-style: normal;
-    font-family: "montserrat", sans-serif;
     margin-left: 500px; /*move the bio 500 px to the left*/
     margin-top: 50px;
     padding: 30px 30px; 
@@ -91,22 +98,28 @@
 .Skills{
     background-color: #1e272e;
     background-size: 1600px 1500px; /* width, height*/
-    height: 797px;
+    height: 670px;
+    margin:120px 10px;
     overflow: auto;
 }
 
 .Skills .SkillsTitle{
     color: #f5f6fa;
-    font-family:  "montserrat", sans-serif;
+    margin-left: 290px;
     font-size: 40px;
-    margin-left: 270px;
-    margin-top: 80px;
+}
+
+.Skills .SkillsBorder{
+    width: 95px;
+    height: 4px;
+    background: #f5f6fa;
+    margin: 15px 290px;
 }
 
 .Skills .ListOfSkills{
-    border: 1px solid #f5f6fa;
+    border: .1px solid #f5f6fa;
     border-radius: 10px;
-    box-shadow: -10px 10px #f5f6fa;
+    box-shadow: 0 2px 6px 0 rgba(255, 255, 255, 0), 0 1px 15px 0 rgba(255, 255, 255, .8);
     color: #f5f6fa;
     font-family:  "montserrat", sans-serif;
     font-size: 20px;
@@ -123,39 +136,36 @@
 }
 
 .CollageOfLogos{
-    margin-left: 750px;
-    margin-top: 165px;
+    margin: 270px 760px;
     position: absolute;
 }
 
 .Portfolio{
     background-color:#f5f6fa;
     background-size: 1600px 1500px;
-    height: 1800px;
+    height: 2000px;
     overflow: auto;
 }
 
 .Portfolio .PortfolioTitle{
     color: #1e272e;
-    font-family: "montserrat", sans-serif;
     font-size: 50px;
     margin-left: 640px;
-    margin-top:80px;
+    margin-top: 80px;
 }
 
 .Portfolio .PersonalProjectsTitle{
     color:#1e272e;
-    font-family: "montserrat", sans-serif;
     font-size: 40px;
     margin-top: 80px;
-    padding: 10px 580px;
+    padding: 10px 590px;
 }
 
 .Portfolio .PersonalProjectsBorder{
-    width: 340px;
+    width: 280px;
     height: 4px;
     background: #1e272e;
-    margin: 15px 580px;
+    margin: 15px 590px;
 }
 
 .SchoolProjects{
@@ -164,17 +174,16 @@
 
 .Portfolio .SchoolProjectsTitle{
     color:#1e272e;
-    font-family: "montserrat", sans-serif;
     font-size: 40px;
     margin-top: 80px;
     padding: 10px 600px;
 }
 
 .Portfolio .SchoolProjectsBorder{
-    width: 300px;
+    width: 250px;
     height: 4px;
     background: #1e272e;
-    margin: 15px 605px;
+    margin: 15px 600px;
 }
 /* Projects are going to have this structure:
     Title
@@ -186,25 +195,23 @@
     color:#1e272e;
     font-size: 27px;
     font-style: normal;
-    font-family: "montserrat", sans-serif;
     margin-left: 600px;
     margin-top: 50px;
 }
 .Portfolio .MagnitieImage{
     border-radius: 10px;
-    box-shadow: 5px 5px #1e272e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .8), 0 6px 20px 0 rgba(0, 0, 0, .8);
     float: left;  /* Image located at the left side */
-    margin-top:30px;
+    margin-top:45px;
     margin-left:50px;
 }
 .Portfolio .MagnitieDescription{
     border: 1px solid #1e272e;
     border-radius: 10px;
-    box-shadow: 10px 10px #1e272e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .8), 0 6px 20px 0 rgba(0, 0, 0, .8);
     color:#1e272e;
     font-style: normal;
     font-size: 17px;
-    font-family: "montserrat", sans-serif;
     height: 250px;
     margin-left: 600px;
     margin-top: 10px;
@@ -246,27 +253,25 @@
     color:#1e272e;
     font-size: 27px;
     font-style: normal;
-    font-family: "montserrat", sans-serif;
     margin-left: 55px;
     margin-top: 100px;
 }
 
 .Portfolio .RshellImage{
-    box-shadow: 5px 5px #1e272e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .8), 0 6px 20px 0 rgba(0, 0, 0, .8);
     float: right; /* Image located at the right side */
-    margin-top:20px;
+    margin-top:35px;
     margin-right:100px;
 }
 
 .Portfolio .RshellDescription{
     border: 1px solid #1e272e;
     border-radius: 10px;
-    box-shadow: -10px 10px #1e272e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .8), 0 6px 20px 0 rgba(0, 0, 0, .8);
     color:#1e272e;
     font-size: 17px;
     font-style: normal;
-    font-family: "montserrat", sans-serif;
-    height: 250px;
+    height: 260px;
     margin-left: 50px;
     margin-right: 680px;
     margin-top: 37px;
@@ -313,31 +318,30 @@
 
 .Contact .ContactTitle{
     color: #f5f6fa;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     margin-left:50px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .Contact .ContactInfo{
     color: #f5f6fa;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-left: 100px;   
     margin-top: 40px;
 
 }
 
-.Contact .ContactInfo .Email, .Github{
-    border: 2px solid #f5f6fa;
+.Contact .ContactInfo .Email, .Github, .Phone{
+    border: .1px solid #f5f6fa;
     background: #1e272e;
     border-radius: 20px;
+    box-shadow: 0 2px 6px 0 rgba(255, 255, 255, 0), 0 1px 15px 0 rgba(255, 255, 255, .8);
     color: #f5f6fa;
     padding: 10px 20px;
     text-decoration: none;
 }
 
-.Contact .ContactInfo .Email:hover, .Github:hover{
+.Contact .ContactInfo .Email:hover, .Github:hover, .Phone:hover{
     background-color: #f5f6fa;
     color:#1e272e;
     transition: 0.8s ease;
