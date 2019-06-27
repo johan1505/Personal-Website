@@ -5,6 +5,33 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/1fa8d249de.js"></script>
+    <script>type="text/javascript"
+
+    var image_tracker = '1';
+    function changeMagnitieImage(){
+        var MagnitieImage = document.getElementById('Magnitie');
+        if (image_tracker=='1'){
+            MagnitieImage.src= 'Images/Magnitie2.jpg';
+            image_tracker = '2';
+        }
+        else if(image_tracker=='2'){
+            MagnitieImage.src='Images/Magnitie3.jpg';
+            image_tracker = '3';
+        }
+        else if(image_tracker=='3'){
+            MagnitieImage.src='Images/Magnitie4.jpg';
+            image_tracker = '4';
+        }
+        else if(image_tracker=='4'){
+            MagnitieImage.src='Images/Magnitie5.jpg';
+            image_tracker = '5';
+        }
+        else {
+            MagnitieImage.src='Images/Magnitie.jpg';
+            image_tracker = '1';
+        }
+    }    
+    </script>
   </head>
   <body>
     <div class="Wrapper">
@@ -77,7 +104,8 @@
                     <h3 class="SchoolProjectsTitle">School Projects</h3>
                     <div class="SchoolProjectsBorder"></div>
                         <h4 class="MagnitieTitle">Magnitie - Metal Finder Robot </h4>
-                            <img class="MagnitieImage" src="Images/Magnitie.jpg" height="330" width="460"/>
+                            <img class="MagnitieImage" src="Images/Magnitie.jpg" id="Magnitie" height="330" width="460"/>
+                            <a class="ChangeMagnitieImageButton" onclick="changeMagnitieImage();"> <i class="fas fa-arrow-right"></i> </a>
                             <br><br>
                             <p class="MagnitieDescription" align="justify">
                                 This is my final project for the Intro to Embedded systems course that I took during my second year. 

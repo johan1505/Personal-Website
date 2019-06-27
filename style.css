@@ -54,6 +54,10 @@
 
 .AboutMe{
     background-color: #f5f6fa;
+    border-top-right-radius:80px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
     height:630px;
     margin-top:790px; /*Moves the AboutMe div along with its siblins 640px down */
     overflow: auto;
@@ -143,6 +147,10 @@
 .Portfolio{
     background-color:#f5f6fa;
     background-size: 1600px 1500px;
+    border-top-right-radius:80px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
     height: 2000px;
     overflow: auto;
 }
@@ -205,6 +213,28 @@
     margin-top:45px;
     margin-left:50px;
 }
+
+.Portfolio .ChangeMagnitieImageButton{
+    background-color: #1e272e;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .8), 0 6px 20px 0 rgba(0, 0, 0, .8);
+    color:#f5f6fa;
+    cursor: pointer;
+    height: 20px;
+    margin-left: -270px;
+    margin-top: 400px;
+    padding: 10px 30px;
+    position: absolute;
+    width: 20px;
+}
+
+.Portfolio .ChangeMagnitieImageButton:hover{
+    background-color: #f5f6fa;
+    border: 1px solid #1e272e;
+    color:#2c3e50;
+    transition: 1.0s ease;
+}
+
 .Portfolio .MagnitieDescription{
     border: 1px solid #1e272e;
     border-radius: 10px;
