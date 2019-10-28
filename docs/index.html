@@ -64,15 +64,38 @@
             <div id="PersonalProjects" class="mt-5">
                 <h3> Personal Projects</h3>
                 <div class="row project-section background-black">
-                    <div class="col-lg-4">
-                        <h4 class="text-center">ThErapy Screening</h4>
-                        <img class="mx-auto d-block mt-4" src="Images/ThErapyScreening.jpg" height="330" width="330"/>
+                    <div class="col-lg-6 mt-3">
+                        <h4 class="text-center">TIM - Time Management Informer</h4>
+                        <img class="mx-auto d-block mt-5" src="Images/TIM_profile_page.png" height="330" width="460"/>
                     </div>
-                    <div class="col-lg-8">
-                        <p class="text-justify ml-4 mt-5 mr-4">
-                            This project is an android app meant to improve the collection of information from patients of Child Therapists. I developed this app using Android Studio, Java, and Google's Firebase
-                            The app lets a therapist sign in with his/her Google account, this authentication functionality was accomplished using Google's Firebase API. Once the therapist is signed in, the app can be used to gathered information (names, ages, sexes, concerns) from the therapists' patients as well ass their
-                            answers to a questionnarie that is composed of two portions, one for the parent of the child and one for the child. After the patients finish inputting their information and answering to the questionnarie, the app generates a report with the information gathered and sends the report to the email of the therapist
+                    <div class="col-lg-6 mt-5">
+                        <p class="text-justify ml-4 mr-4">
+                            &nbsp;&nbsp; This project is a website called TIM that I developed using Django web-framework and PostgreSQL database management system.
+                            My goal on developing TIM was to create a useful tool that will inform Google Calendar users about their time-management habits and, at 
+                            the same time, provide to them a visual representation of those habits. <br><br>
+                            &nbsp;&nbsp; TIM  generates summaries of how much time a user has spent or will spend per event on his/her current week.
+                             Data used to generate these summaries is collected from user's Google Calendars using Google's OAuth 2.0 protocol for authentication and Google Calendar's API.
+                            Once a user has created an account on the website, he/she can let TIM start generating summaries based on the current week. These summaries get saved in the website's database and can be re-accessed or deleted by the user at any given time.
+                            Furthermore, summaries come with a nice colored-doughnut chart that displays the data gathered, this feature was achieved using Char.js library.                                                        
+                            <br><br> October , 2019 
+                            <a class="githubLink" href="https://github.com/johan1505/TIM-Time-Management-Informer-Website" target="_blank">
+                                GitHub Repository &nbsp;
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row project-section background-black">
+                    <div class="col-lg-5 mt-3">
+                        <h4 class="text-center">ThErapy Screening</h4>
+                        <img class="mx-auto d-block mt-5" src="Images/ThErapyScreening.jpg" height="330" width="330"/>
+                    </div>
+                    <div class="col-lg-7 mt-5">
+                        <p class="text-justify ml-4 mr-4">
+                            &nbsp;&nbsp; This project is an android app meant to improve the collection of information from patients of Child Therapists. I developed this app using Android Studio, Java, and Google's Firebase. <br><br>
+                            &nbsp;&nbsp; The app lets a therapist sign in with his/her Google account, this authentication functionality was accomplished using Google's Firebase API. Once the therapist is signed in, the app can be used
+                            to gathered information (names, ages, sexes, concerns) from the therapists' patients as well ass their answers to a questionnarie that is composed of two portions, one for the parent of the child and one for the child.<br><br>
+                            &nbsp; &nbsp; After the patients finish inputting their information and answering to the questionnarie, the app generates a report with the information gathered and sends the report to the email of the therapist
                             for him to compare and contrast the patients' answers before, during, or after the appointment.
                             <br><br> June, 2019 
                             <a class="githubLink" href="https://github.com/johan1505/ThErapy-Screening" target="_blank">
@@ -86,35 +109,36 @@
             <div id="SchoolProjects" class="mt-5">
                  <h3>School Projects</h3>
                 <div class="row project-section background-black">
-                    <div class="col-lg-4">
+                    <div class="col-lg-5 mt-1">
                         <h4 class="text-center">Magnitie - Metal Finder Robot</h4>
-                        <img class="project-img mx-auto d-block mt-4" src="Images/Magnitie.jpg" height="250" width="300"/>
+                        <img class="project-img mx-auto d-block mt-5" src="Images/Magnitie.jpg" height="250" width="300"/>
                     </div>
-                    <div class="col-lg-8">
-                            <p class="text-justify ml-4 mt-5 mr-4">
-                                This is my final project for the Intro to Embedded systems course that I took during my second year. 
-                                For this project, I developed a four-wheel motorized robot called Magnitie that is capable of detecting small-size metal objects as it travels in a straight direction.
-                                Magnitie keeps count of the number of metals that finds as it travels, and it stops if it detects a potential obstacle in fron it.<br><br>
-                                Magnitie has incorporated an <bold>ATMega 1284 micro-controller</bold> to control its entire functionality, two DC motors that enable it to move, an inductive proximity sensor to detect metals, and an ultrasonic sensor to detect obstacles.
-                                The software for this project was implemented using Atmel Studio, C programming language, and concurrnet-synchronous state machines.
-                                <br><br> May, 2019 
-                                 <a class="githubLink" href="https://github.com/johan1505/Magnitie--The-Metal-Finder-Robot"target="_blank">
-                                    GitHub Repository &nbsp;
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </p>               
+                    <div class="col-lg-7 mt-5">
+                        <p class="text-justify ml-4 mr-4">
+                            &nbsp;&nbsp; This is my final project for the Intro to Embedded systems course that I took during my second year. 
+                            For this project, I developed a four-wheel motorized robot called Magnitie that is capable of detecting small-size metal objects as it travels in a straight direction.<br><br>
+                            &nbsp;&nbsp; Magnitie keeps count of the number of metal objects that finds as it travels, and it stops if it detects a potential obstacle in front of it.
+                            Magnitie has incorporated an ATMega 1284 micro-controller to control its entire functionality, two DC motors that enable it to move, an inductive proximity sensor to detect metals, and an ultrasonic sensor to detect obstacles.
+                            The software for this project was implemented using Atmel Studio, C programming language, and concurrnet-synchronous state machines.
+                            <br><br> May, 2019 
+                                <a class="githubLink" href="https://github.com/johan1505/Magnitie--The-Metal-Finder-Robot"target="_blank">
+                                GitHub Repository &nbsp;
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </p>               
                     </div>
                 </div>
                 <div class="row project-section background-black">
-                    <div class="col-lg-4">
+                    <div class="col-lg-5 mt-1">
                         <h4 class="text-center">Rshell</h4>
                         <img class="project-img mx-auto d-block mt-5" src="Images/Rshell.png" height="250" width="350"/>
                     </div>
-                    <div class="col-lg-8">
-                            <p class="text-justify ml-4 mt-5 mr-4">
-                                This is a project on which I worked with a partner on the development of a C++ program that simulated the functionality of a command terminal program. The main concepts that we applied on this project were <bold>object-oriented programming principles</bold> and <bold>design patterns</bold>.
-                                We achieved the proper functionality of the program by parsing and analyzing user inputted linux commands, decomposing the commands into appropiate objects that formed a tree composite object, and executing those objects in a recursive manner using system calls.
-                                <br><br>This program was progressively developed, adding extra features after unit testing the behavior of individual components by using the <bold>Google Test Framework for C++</bold> and integration testing of the whole system using bash I/0 redirection.
+                    <div class="col-lg-7 mt-5">
+                            <p class="text-justify ml-4 mr-4">
+                                &nbsp;&nbsp; This is a project on which I worked with a partner on the development of a C++ program that simulates the functionality of a command terminal program. The main concepts that we applied on this project were object-oriented programming principles and design patterns.
+                                We achieved the proper functionality of the program by parsing and analyzing user inputted linux commands, decomposing the inputted commands into appropiate objects that formed a tree composite object, and executing those objects in a recursive manner using system calls.
+                                <br><br>
+                                &nbsp;&nbsp; This program was progressively developed, adding extra features after unit testing the behavior of individual components by using the Google Test Framework for C++ and integration testing of the whole system using bash I/0 redirection.
                                 <br><br> May, 2019 
                                 <a class="githubLink" href="https://github.com/johan1505/CS100---Rshell-Project/tree/master/spring-2019-assignment-cs100_ja_assn1" target="_blank">
                                     GitHub Repository &nbsp;
@@ -135,18 +159,17 @@
                         <p>jguz1505@gmail.com</p>
                     </div>
                     <div class="col-md-4 mt-5">
-                        <a href="https://github.com/johan1505" target="_blank">
-                            <i class="fab fa-github-square contactIcons"></i>
-                        </a>
-                        <p>johan1505</p>
-                    </div>
-                    <div class="col-md-4 mt-5">
                         <a  href="tel:951-850-8094">
                             <i class="fas fa-phone contactIcons"></i>
                         </a>
                         <p>951-850-8094</p>
                     </div>
-
+                    <div class="col-md-4 mt-5">
+                        <a href="https://github.com/johan1505" target="_blank">
+                            <i class="fab fa-github-square contactIcons"></i>
+                        </a>
+                        <p>johan1505</p>
+                    </div>
                 </div>
             </div>
       </div>
