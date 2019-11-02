@@ -1,51 +1,41 @@
-<!DOCTYPE html> <!--This is not a tag. It is an instruction to the web browser about what version of HTML the page is written in-->
+<!DOCTYPE html> 
 <html>
   <head>
-    <title>Johan Guzman</title> <!--This is the title of the website-->
+    <title>Johan Guzman</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1fa8d249de.js"></script>
-
   </head>
   <body>
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="font-size: 19px;">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsList" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse" id="navbarsList">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-link" href="#AboutMe">About me <i class=" fas fa-address-card"></i></a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Portfolio <i class="fas fa-briefcase"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#PersonalProjects">Personal Projects</a>
-                          <a class="dropdown-item" href="#SchoolProjects">School Projects</a>
-                        </div>
-                    </li> 
-                    <a class="nav-link ResumeLink" href="Documents/Resume.pdf" target="_blank">Resume <i class="fas fa-file"></i></a>
-                    <a class="nav-link" href="#Contact">Contact <i class="fas fa-envelope-square"></i> </a>
-                </div>
-              </div>
-            </nav>
-        </div>
-       
-        <div id="AboutMe" class="content-section background-white container mt-4">
-            <div class="row">
-                <div class="col-lg-4 mt-5">
-                    <div class="mt-4">
-                        <h1 class="text-center">Johan Guzman</h1>
-                        <img class="profile-picture mx-auto d-block mt-4" src="Images/ProfilePicture.jpg" height="300" width="300"/>
+      <!--Vertical Navigation-->
+        <div class="vertical-nav background-black" id="sidebar">
+            <div class="container mt-5">
+                <h1 class="display-4">Johan Guzman</h1>
+            </div>
+            <ul class="nav flex-column background-black mt-5">
+                <li class="nav-item"><a href="#AboutMe" class="nav-link text-white font-italic"><i class="fa fa-address-card"></i>About Me</a></li>
+                <li class="nav-item"><a class="nav-link text-white font-italic" href="#Portfolio"><i class="fas fa-briefcase"></i> Portfolio</a>
+                    <ul class="nav-item">
+                        <a class="mr-3 nav-link text-white font-italic" href="#PersonalProjects">Personal Projects</a>
+                        <a class="mr-3 nav-link text-white font-italic" href="#SchoolProjects">School Projects</a>
+                    </ul>
+                </li> 
+                <li class="nav-item"><a class="nav-link text-white font-italic" href="Documents/Resume.pdf" target="_blank"><i class="fas fa-file"></i> Resume</a></li>
+                <li class="nav-item"><a class="nav-link text-white font-italic" href="#Contact"><i class="fas fa-envelope-square"></i> Contact</a></li>
+            </ul>
+        </div>     
+        <!--Main Body-->
+        <div class="page-content" id="content">
+            <!--About Me-->
+            <section id="AboutMe" class="content-section container mt-4">
+                <h2 class="text-center display-4">About Me</h2>
+                <div class="row">
+                    <div class="col-md-5">
+                        <img class="profile-picture mx-auto d-block" src="Images/ProfilePicture.jpg" height="280" width="280"/>
                     </div>
-                </div>
-                <div class="col-lg-8">
-                    <div><!--About Me-->
-                        <p class="text-justify mt-5 ml-3" style="padding: 0px 30px;">
-                            Hello! My name is Johan Guzman, and I am a third year Computer Science student at the University of California, Riverside (UCR). 
+                    <div class="col-md-7 mt-5">
+                        <p class="text-justify" style="padding: 0px 30px;">
+                            Hello! My name is Johan, and I am a third year Computer Science student at the University of California, Riverside (UCR). 
                             A little bit about myself outside of Computer Science, I was born and raised in Peru, South America. I really enjoy to play with dogs, and I'm a big fan of Marvel superheroes.
                             <br><br>
                             I started my journey in the field of Computer Science back in high school during the summer after my Junior year when I self-learned the basics of Python programming. 
@@ -53,126 +43,130 @@
                             When I got to college, I continued to improve my programming skills and knowledge about Computer Science.
                             I got the opportunity to master C++ in my lower-division courses, gain knowledge about complex algorithims and data structures, grasp embedded systems programming skills, and learn other languages such as C#, Java, HTML, and CSS during my free time, Hackathons, and work. 
                             <br><br>
-                             <bold>I am interested in web and sofware development, and I am currently looking for an internship opportunity for Summer, 2020 in order to further develop my skills, grow professionally, and gain more real-work experience.</bold>
-                        </p>
-                    </div><!--End of div About me-->
-                </div>
-            </div>
-        </div>
-        <div id="Portfolio" class="container mt-5">
-            <h2 class="text-center mt-5 ">Porfolio</h2>
-            <div id="PersonalProjects" class="mt-5">
-                <h3> Personal Projects</h3>
-                <div class="row project-section background-black">
-                    <div class="col-lg-6 mt-3">
-                        <h4 class="text-center">TIMI- Time Management Informer</h4>
-                        <img class="mx-auto d-block mt-5" src="Images/TIM_profile_page.png" height="300" width="465"/>
-                    </div>
-                    <div class="col-lg-6 mt-5">
-                        <p class="text-justify ml-4 mr-4">
-                            &nbsp;&nbsp; This project is a website called TIMI that I developed using Django web-framework and PostgreSQL database management system.
-                            My goal on developing TIMI was to create a useful tool that will inform Google Calendar users about their time-management habits and, at 
-                            the same time, provide to them a visual representation of those habits. <br><br>
-                            &nbsp;&nbsp; TIMI generates summaries of how much time a user has spent or will spend per event on his/her current week.
-                            Data used to generate these summaries is collected from user's Google Calendars using Google's OAuth 2.0 protocol for authentication and Google Calendar's API.
-                            Once a user has created an account on the website, he/she can let TIMI start generating summaries based on the current week. These summaries get saved in the website's database and can be re-accessed or deleted by the user at any given time.
-                            Furthermore, summaries come with a nice colored-doughnut chart that displays the data gathered, this feature was achieved using Char.js library.                                                        
-                            <br><br> October , 2019 
-                            <a class="githubLink" href="" target="_blank">
-                                GitHub Repository &nbsp;
-                                <i class="fab fa-github"></i>
-                            </a>
+                            <bold>I am interested in web and sofware development, and I am currently looking for an internship opportunity for Summer, 2020 in order to further develop my skills, grow professionally, and gain more real-work experience.</bold>
                         </p>
                     </div>
-                </div>
-                <div class="row project-section background-black">
-                    <div class="col-lg-5 mt-3">
-                        <h4 class="text-center">ThErapy Screening</h4>
-                        <img class="mx-auto d-block mt-5" src="Images/ThErapyScreening.jpg" height="310" width="370"/>
-                    </div>
-                    <div class="col-lg-7 mt-5">
-                        <p class="text-justify ml-4 mr-4">
-                            &nbsp;&nbsp; This project is an android app meant to improve the collection of information from patients of Child Therapists. I developed this app using Android Studio, Java, and Google's Firebase. <br><br>
-                            &nbsp;&nbsp; The app lets a therapist sign in with his/her Google account, this authentication functionality was accomplished using Google's Firebase API. Once the therapist is signed in, the app can be used
-                            to gathered information (names, ages, sexes, concerns) from the therapists' patients as well ass their answers to a questionnarie that is composed of two portions, one for the parent of the child and one for the child.<br><br>
-                            &nbsp; &nbsp; After the patients finish inputting their information and answering to the questionnarie, the app generates a report with the information gathered and sends the report to the email of the therapist
-                            for him to compare and contrast the patients' answers before, during, or after the appointment.
-                            <br><br> June, 2019 
-                            <a class="githubLink" href="https://github.com/johan1505/ThErapy-Screening" target="_blank">
-                                GitHub Repository &nbsp;
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div id="SchoolProjects" class="mt-5">
-                 <h3>School Projects</h3>
-                <div class="row project-section background-black">
-                    <div class="col-lg-5 mt-1">
-                        <h4 class="text-center">Magnitie - Metal Finder Robot</h4>
-                        <img class="project-img mx-auto d-block mt-5" src="Images/Magnitie.jpg" height="250" width="300"/>
-                    </div>
-                    <div class="col-lg-7 mt-5">
-                        <p class="text-justify ml-4 mr-4">
-                            &nbsp;&nbsp; This is my final project for the Intro to Embedded systems course that I took during my second year. 
-                            For this project, I developed a four-wheel motorized robot called Magnitie that is capable of detecting small-size metal objects as it travels in a straight direction.<br><br>
-                            &nbsp;&nbsp; Magnitie keeps count of the number of metal objects that finds as it travels, and it stops if it detects a potential obstacle in front of it.
-                            Magnitie has incorporated an ATMega 1284 micro-controller to control its entire functionality, two DC motors that enable it to move, an inductive proximity sensor to detect metals, and an ultrasonic sensor to detect obstacles.
-                            The software for this project was implemented using Atmel Studio, C programming language, and concurrnet-synchronous state machines.
-                            <br><br> May, 2019 
-                                <a class="githubLink" href="https://github.com/johan1505/Magnitie--The-Metal-Finder-Robot"target="_blank">
-                                GitHub Repository &nbsp;
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </p>               
-                    </div>
-                </div>
-                <div class="row project-section background-black">
-                    <div class="col-lg-5 mt-1">
-                        <h4 class="text-center">Rshell</h4>
-                        <img class="project-img mx-auto d-block mt-5" src="Images/Rshell.png" height="250" width="350"/>
-                    </div>
-                    <div class="col-lg-7 mt-5">
-                            <p class="text-justify ml-4 mr-4">
-                                &nbsp;&nbsp; This is a project on which I worked with a partner on the development of a C++ program that simulates the functionality of a command terminal program. The main concepts that we applied on this project were object-oriented programming principles and design patterns.
-                                We achieved the proper functionality of the program by parsing and analyzing user inputted linux commands, decomposing the inputted commands into appropiate objects that formed a tree composite object, and executing those objects in a recursive manner using system calls.
-                                <br><br>
-                                &nbsp;&nbsp; This program was progressively developed, adding extra features after unit testing the behavior of individual components by using the Google Test Framework for C++ and integration testing of the whole system using bash I/0 redirection.
-                                <br><br> May, 2019 
-                                <a class="githubLink" href="https://github.com/johan1505/CS100---Rshell-Project/tree/master/spring-2019-assignment-cs100_ja_assn1" target="_blank">
+                 </div>
+            </section>   
+            <hr/> 
+            <!--Portfolio-->
+            <section id="Portfolio" class="container content-section">
+                <h2 class="text-center display-4">Porfolio</h2>
+                <div id="PersonalProjects" style="margin-top: 80px;">
+                    <h1 class="text-center"><small class="text-muted"> Personal Projects</small></h1>
+                    <div class="row project-section">
+                        <div class="col-md">
+                            <h4 class="text-center">TIMI- Time Management Informer</h4>
+                            <img class="mx-auto d-block" src="Images/TIM_profile_page.png" height="320" width="480"/>
+                        </div>
+                        <div class="col-md mt-5">
+                            <p class="text-justify">
+                                This project is a website called TIMI that I developed using Django web-framework and PostgreSQL database management system.
+                                My goal on developing TIMI was to create a useful tool that will inform Google Calendar users about their time-management habits and, at 
+                                the same time, provide to them a visual representation of those habits. <br><br>
+                                TIMI generates summaries of how much time a user has spent or will spend per event on his/her current week.
+                                Data used to generate these summaries is collected from user's Google Calendars using Google's OAuth 2.0 protocol for authentication and Google Calendar's API.
+                                Once a user has created an account on the website, he/she can let TIMI start generating summaries based on the current week. These summaries get saved in the website's database and can be re-accessed or deleted by the user at any given time.
+                                Furthermore, summaries come with a nice colored-doughnut chart that displays the data gathered, this feature was achieved using Char.js library.                                                        
+                                <br><br><i class="far fa-calendar-check"></i> October , 2019 
+                                <a class="btn btn-dark bg-dark rounded-pill float-right" href="" target="_blank">
                                     GitHub Repository &nbsp;
                                     <i class="fab fa-github"></i>
                                 </a>
                             </p>
+                        </div>
                     </div>
-                </div>  
-            </div>
-        </div>
-        <div id="Contact" class="background-black mt-5 pb-5" ><!--Contact-->
-            <div class="mt-5">
-                <div class="row text-center">
-                    <div class="col-md-4 mt-5">
-                        <a href="mailto:jguz1505gmail.com">
-                            <i class="fas fa-envelope contactIcons"></i>
-                         </a>
-                        <p>jguz1505@gmail.com</p>
-                    </div>
-                    <div class="col-md-4 mt-5">
-                        <a  href="tel:951-850-8094">
-                            <i class="fas fa-phone contactIcons"></i>
-                        </a>
-                        <p>951-850-8094</p>
-                    </div>
-                    <div class="col-md-4 mt-5">
-                        <a href="https://github.com/johan1505" target="_blank">
-                            <i class="fab fa-github-square contactIcons"></i>
-                        </a>
-                        <p>johan1505</p>
+                    <div class="row project-section">
+                        <div class="col-md">
+                            <h4 class="text-center">ThErapy Screening</h4>
+                            <img class="mx-auto d-block" src="Images/ThErapyScreening.jpg" height="350" width="420"/>
+                        </div>
+                        <div class="col-md mt-5">
+                            <p class="text-justify">
+                                &nbsp;&nbsp; This project is an android app meant to improve the collection of information from patients of Child Therapists. I developed this app using Android Studio, Java, and Google's Firebase. <br><br>
+                                &nbsp;&nbsp; The app lets a therapist sign in with his/her Google account, this authentication functionality was accomplished using Google's Firebase API. Once the therapist is signed in, the app can be used
+                                to gathered information (names, ages, sexes, concerns) from the therapists' patients as well ass their answers to a questionnarie that is composed of two portions, one for the parent of the child and one for the child.<br><br>
+                                &nbsp; &nbsp; After the patients finish inputting their information and answering to the questionnarie, the app generates a report with the information gathered and sends the report to the email of the therapist
+                                for him to compare and contrast the patients' answers before, during, or after the appointment.
+                                <br><br><i class="far fa-calendar-check"></i> June, 2019 
+                                <a class="btn btn-dark bg-dark rounded-pill float-right" href="https://github.com/johan1505/ThErapy-Screening" target="_blank">
+                                    GitHub Repository &nbsp;
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-      </div>
+                <div id="SchoolProjects" style="margin-top: 110px;">
+                    <h1 class="text-center"><small class="text-muted"> School Projects</small></h1>
+                    <div class="row project-section">
+                        <div class="col-md">
+                            <h4 class="text-center">Magnitie - Metal Finder Robot</h4>
+                            <img class="mx-auto d-block" src="Images/Magnitie.jpg" height="300" width="400"/>
+                        </div>
+                        <div class="col-md mt-5">
+                            <p class="text-justify">
+                                This is my final project for the Intro to Embedded systems course that I took during my second year. 
+                                For this project, I developed a four-wheel motorized robot called Magnitie that is capable of detecting small-size metal objects as it travels in a straight direction.<br><br>
+                                Magnitie keeps count of the number of metal objects that finds as it travels, and it stops if it detects a potential obstacle in front of it.
+                                Magnitie has incorporated an ATMega 1284 micro-controller to control its entire functionality, two DC motors that enable it to move, an inductive proximity sensor to detect metals, and an ultrasonic sensor to detect obstacles.
+                                The software for this project was implemented using Atmel Studio, C programming language, and concurrnet-synchronous state machines.
+                                <br><br><i class="far fa-calendar-check"></i> May, 2019 
+                                    <a class="btn btn-dark bg-dark rounded-pill float-right" href="https://github.com/johan1505/Magnitie--The-Metal-Finder-Robot"target="_blank">
+                                    GitHub Repository &nbsp;
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </p>               
+                        </div>
+                    </div>
+                    <div class="row project-section">
+                        <div class="col-md">
+                            <h4 class="text-center">Rshell</h4>
+                            <img class="mx-auto d-block" src="Images/Rshell.png" height="300" width="450"/>
+                        </div>
+                        <div class="col-md mt-5">
+                                <p class="text-justify">
+                                    This is a project on which I worked with a partner on the development of a C++ program that simulates the functionality of a command terminal program. The main concepts that we applied on this project were object-oriented programming principles and design patterns.
+                                    We achieved the proper functionality of the program by parsing and analyzing user inputted linux commands, decomposing the inputted commands into appropiate objects that formed a tree composite object, and executing those objects in a recursive manner using system calls.
+                                    <br><br>
+                                    This program was progressively developed, adding extra features after unit testing the behavior of individual components by using the Google Test Framework for C++ and integration testing of the whole system using bash I/0 redirection.
+                                    <br><br><i class="far fa-calendar-check"></i> May, 2019 
+                                    <a class="btn btn-dark bg-dark rounded-pill float-right" href="https://github.com/johan1505/CS100---Rshell-Project/tree/master/spring-2019-assignment-cs100_ja_assn1" target="_blank">
+                                        GitHub Repository &nbsp;
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </p>
+                        </div>
+                    </div>  
+                </div>
+            </section>
+            <hr/> 
+            <!--Contact-->
+            <section id="Contact" class="pb-5 content-section" >
+                <div class="mt-5">
+                    <div class="row text-center">
+                        <div class="col-md-4 mt-5">
+                            <a href="mailto:jguz1505gmail.com">
+                                <i class="fas fa-envelope contactIcons"></i>
+                            </a>
+                            <p>jguz1505@gmail.com</p>
+                        </div>
+                        <div class="col-md-4 mt-5">
+                            <a  href="tel:951-850-8094">
+                                <i class="fas fa-phone contactIcons"></i>
+                            </a>
+                            <p>951-850-8094</p>
+                        </div>
+                        <div class="col-md-4 mt-5">
+                            <a href="https://github.com/johan1505" target="_blank">
+                                <i class="fab fa-github-square contactIcons"></i>
+                            </a>
+                            <p>johan1505</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
   </body><!--End of Website-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
