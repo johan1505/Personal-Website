@@ -58,11 +58,14 @@ body{
 	border-radius: 50px;
 	font-size: 40px;
 	color: #2f3542;
+	margin-right: 10px;
 }
 
 .contactIcons:hover{
+	padding: 14px;
 	background: #2f3542;
 	color: #f5f6fa;
+	font-size: 45px;
 }
 
 
