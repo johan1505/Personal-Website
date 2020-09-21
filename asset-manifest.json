@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.07e7cd83.chunk.css",
+    "main.js": "/static/js/main.5e637d10.chunk.js",
+    "main.js.map": "/static/js/main.5e637d10.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.83c3e0c4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.83c3e0c4.js.map",
+    "static/js/2.d9afbd1c.chunk.js": "/static/js/2.d9afbd1c.chunk.js",
+    "static/js/2.d9afbd1c.chunk.js.map": "/static/js/2.d9afbd1c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.0536681178e909a40ba2ee88b662af43.js": "/precache-manifest.0536681178e909a40ba2ee88b662af43.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.07e7cd83.chunk.css.map": "/static/css/main.07e7cd83.chunk.css.map",
+    "static/js/2.d9afbd1c.chunk.js.LICENSE.txt": "/static/js/2.d9afbd1c.chunk.js.LICENSE.txt",
+    "static/media/Magnitie1.jpg": "/static/media/Magnitie1.e1be1381.jpg",
+    "static/media/Magnitie2.jpg": "/static/media/Magnitie2.88fbc6f4.jpg",
+    "static/media/Magnitie3.jpg": "/static/media/Magnitie3.8ca0b057.jpg",
+    "static/media/Magnitie4.jpg": "/static/media/Magnitie4.bc9ae609.jpg",
+    "static/media/Magnitie5.jpg": "/static/media/Magnitie5.5eed349e.jpg",
+    "static/media/MoodMixer1.png": "/static/media/MoodMixer1.fff3b42b.png",
+    "static/media/MoodMixer2.png": "/static/media/MoodMixer2.b1a0c4bd.png",
+    "static/media/MoodMixer3.png": "/static/media/MoodMixer3.6e07ef34.png",
+    "static/media/TIMI1.png": "/static/media/TIMI1.e2b5f2ab.png",
+    "static/media/TIMI2.png": "/static/media/TIMI2.2a54e8e7.png",
+    "static/media/ThErapyScreening.jpg": "/static/media/ThErapyScreening.ea1aa96b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83c3e0c4.js",
+    "static/js/2.d9afbd1c.chunk.js",
+    "static/css/main.07e7cd83.chunk.css",
+    "static/js/main.5e637d10.chunk.js"
+  ]
+}
